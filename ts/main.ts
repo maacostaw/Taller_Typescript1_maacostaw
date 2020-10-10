@@ -1,5 +1,4 @@
 import { Course } from './course.js';
-
 import { dataCourses } from './dataCourses.js';
 
 let coursesTbody: HTMLElement = document.getElementById('courses')!;
@@ -7,13 +6,11 @@ const btnfilterByName: HTMLElement = document.getElementById("button-filterByNam
 const inputSearchBox: HTMLInputElement = <HTMLInputElement> document.getElementById("search-box")!;
 const totalCreditElm: HTMLElement = document.getElementById("total-credits")!;
 
-
 btnfilterByName.onclick = () => applyFilterByName();
 
 renderCoursesInTable(dataCourses);
 
-totalCreditElm.innerHTML += `${getTotalCredits(dataCourses)}`
-
+totalCreditElm == null? '': totalCreditElm.innerHTML += `${getTotalCredits(dataCourses)}`
 
 function renderCoursesInTable(courses: Course[]): void {
   console.log('Desplegando cursos');
@@ -25,9 +22,6 @@ function renderCoursesInTable(courses: Course[]): void {
     coursesTbody.appendChild(trElement);
   });
 }
- 
-
- 
 
 function applyFilterByName() { 
   let text = inputSearchBox.value;
