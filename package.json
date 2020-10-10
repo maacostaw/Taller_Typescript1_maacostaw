@@ -1,0 +1,22 @@
+{
+  "name": "taller_typescript1_maacostaw",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tsc":"tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maacostaw/Taller_Typescript1_maacostaw.git"
+  },
+  "author": "ma.acostaw",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maacostaw/Taller_Typescript1_maacostaw/issues"
+  },
+  "homepage": "https://github.com/maacostaw/Taller_Typescript1_maacostaw#readme",
+  "devDependencies": {
+    "typescript": "^4.0.3"
+  }
+}
